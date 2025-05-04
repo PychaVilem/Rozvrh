@@ -13,6 +13,10 @@ public class MainWindow extends JFrame {
     private JComboBox<String> mistnostCB = new JComboBox<>();
     private JButton nacti;
 
+    private JFrame  frame;
+    JTable table = new JTable();
+
+
 
     public MainWindow() {
         super("rozvrh");
@@ -20,6 +24,8 @@ public class MainWindow extends JFrame {
         setSize(800, 600); //velikosti okna
         setLocationRelativeTo(null); //vycentrovani vuci cele obrazovce
 
+
+        vygenerujRozvrh();
         vytvorMenu();
 
 
@@ -56,11 +62,11 @@ public class MainWindow extends JFrame {
         menu.add(mistnostCB);
         menu.add(nacti);
 
-        nacti.addActionListener();
+       // nacti.addActionListener();
 
     }
 
     private void vygenerujRozvrh(){
-        System.out.println("jo funguj");
+
     }
 }
